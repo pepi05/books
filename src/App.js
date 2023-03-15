@@ -5,6 +5,7 @@ import SearchForm from "./components/SearchForm";
 import SortDropdown from "./components/SortDropdown";
 import { filterBooks } from "./utils/functions/filterBooks";
 import { sortBooks } from "./utils/functions/sortBooks";
+import "./app.css";
 
 const App = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -37,7 +38,8 @@ const App = () => {
   };
 
   return (
-    <div>
+    <div className="app">
+      <h1 className="app__title">Petar's Books App</h1>
       <SearchForm
         handleSearchSubmit={handleSearchSubmit}
         handleInputChange={handleInputChange}

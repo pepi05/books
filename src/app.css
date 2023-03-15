@@ -1,0 +1,20 @@
+.app {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.app__title {
+  color: #007bff;
+  text-align: center;
+  font-size: 50px;
+}
+
+@media (max-width: 767px) {
+  .app {
+    width: 90%;
+  }
+
+  .app__title {
+    font-size: 33px;
+  }
+}
