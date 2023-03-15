@@ -1,16 +1,20 @@
 import React from "react";
+import "./searchForm.css";
 
 const SearchForm = ({ handleSearchSubmit, handleInputChange }) => {
   return (
-    <form onSubmit={handleSearchSubmit}>
+    <form className="search-form" onSubmit={handleSearchSubmit}>
       <input
+        className="search-form__input"
         type="text"
         name="searchInput"
-        placeholder="Search books by title, author name or genre"
+        placeholder="Search books..."
         onChange={handleInputChange}
       />
 
-      <button type="submit">Search</button>
+      <button className="search-form__button" type="submit">
+        Search
+      </button>
     </form>
   );
 };
